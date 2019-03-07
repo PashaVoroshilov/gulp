@@ -1,0 +1,16 @@
+.home {
+	background: url('../img/bg/home-bg.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+}
+
+.home__title {
+	font-family: $mullerRegular;
+	font-size: 64px;
+	color: #fff;
+	line-height: 77px;
+	max-width: 566px;
+	margin-bottom: 15px;
+}

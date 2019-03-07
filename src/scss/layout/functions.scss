@@ -1,0 +1,3 @@
+@function percent($content, $containerWidth) {
+	@return ($content / $containerWidth) * 100 + 0%;
+}

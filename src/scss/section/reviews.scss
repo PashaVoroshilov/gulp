@@ -1,0 +1,78 @@
+.reviews {
+	padding: 80px 0 180px;
+}
+
+.reviews .furniture__list {
+	margin-bottom: 190px;
+}
+
+.reviews__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 4px solid $green;
+}
+
+.reviews__item {
+	max-width: 680px;
+}
+
+.reviews__name {
+	margin-bottom: 35px;
+}
+
+.reviews__name span {
+	font-family: $mullerRegular;
+	font-size: 22px;
+	color: $green;
+	vertical-align: middle;
+}
+
+.reviews__name i {
+	color: $green;
+	font-size: 42px;
+	vertical-align: middle;
+}
+
+.reviews__text {
+	font-family: $mullerRegular;
+	font-size: 18px;
+	line-height: 25px;
+	color: $black;
+	margin-bottom: 30px;
+}
+
+.reviews__controls {
+	display: flex;
+}
+
+.reviews__controls-left, 
+.reviews__controls-right {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F8F8F8;
+}
+
+.reviews__controls-left {
+	transform: rotate(180deg);
+}
+
+.reviews__controls-left i, 
+.reviews__controls-right i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #828282;
+}
+
+.reviews__pic {
+	width: 480px;
+}
+
+.reviews__pic img {
+	width: 100%;
+	display: block;
+}

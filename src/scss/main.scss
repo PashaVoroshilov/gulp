@@ -1,7 +1,37 @@
+$containerWidth: 1300px;
+
+/* colors */
+$green: #219653;
+$red: #EB5757;
+$yellow: #FFD913;
+$black: #313133;
+@import "layout/fonts";
+
+
+/* fonts */
+$mullerBlack: 'mullerBlack', sans-serif;
+$mullerBold: 'mullerBold', sans-serif;
+$mullerExtraBold: 'mullerExtraBold', sans-serif;
+$mullerHeavy: 'mullerHeavy', sans-serif;
+$mullerLight: 'mullerLight', sans-serif;
+$mullerMedium: 'mullerMedium', sans-serif;
+$mullerRegular: 'mullerRegular', sans-serif;
+$mullerThin: 'mullerThin', sans-serif;
+
 /* layout */
 @import "layout/normalize";
-@import "layout/fonts.css";
+@import "layout/functions";
+@import "layout/advicon";
 @import "layout/style";
 
 
 /* section */
+@import "section/header";
+@import "section/home";
+@import "section/furniture";
+@import "section/order";
+@import "section/project";
+@import "section/reviews";
+@import "section/footer";
+
+

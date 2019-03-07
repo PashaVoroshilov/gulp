@@ -1,0 +1,100 @@
+.order {
+	position: relative;
+	background: url('../img/bg/order-bg.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 850px;
+	height: 1px;
+}
+
+.order__container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.order__pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: rgba(49,49,51,.2);
+	padding-top: 14px;
+	margin-bottom: 20px;
+}
+
+.order__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.order__phons {
+	margin-bottom: 20px;
+}
+
+.order__phons .phone__link {
+	color: #fff;
+}
+
+.order__form .order-btn {
+	box-shadow: 0px 0px 18px rgba(255, 217, 19, 0.48);
+	font-family: $mullerRegular;
+	margin-left: -100px;
+	margin-bottom: 60px;
+}
+
+.order__input {
+	padding: 14px 19px;
+	border: none;
+	background-color: #fff;
+	border-radius: 200px;
+	width: 420px;
+}
+
+.order__input:placeholder {
+	font-family: $mullerRegular;
+	font-size: 14px;
+	color: #828282;
+}
+
+.order__list {
+	display: flex;
+}
+
+.order__item {
+	display: flex;
+	align-items: center;
+	margin-left: 60px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.order__icon-wrap {
+	position: relative;
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-right: 10px;
+}
+
+.order__icon {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 29px;
+	color: $green;
+}
+
+.order__text {
+	flex: 1;
+	font-family: $mullerBold;
+	font-size: 18px;
+	color: #fff;
+}

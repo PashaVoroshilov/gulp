@@ -1,0 +1,141 @@
+.header {
+	position: relative;
+}
+
+.header-logo {
+	position: absolute;
+	width: percent(210px, $containerWidth);
+	height: 129px;
+}
+
+.header-logo img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*============ header nav ================*/
+
+.header-nav {
+	width: 100%;
+	background-color: #F7F7F7;
+}
+
+.header-nav__list {
+	display: flex;
+	justify-content: flex-end;
+	padding: 2px 0;
+}
+
+.header-nav__item {
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+
+	&--active {
+		background-color: $red;
+
+		.header-nav__link i, .header-nav__link span {
+			color: #fff;
+		}
+	}
+}
+
+.header-nav__link {
+	padding: 10px 10px;
+}
+
+.header-nav__link i {
+	font-size: 24px;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.header-nav__link span {
+	font-family: $mullerRegular;
+	vertical-align: middle;
+	color: #4F4F4F;
+}
+
+/*============ header nav end ================*/
+
+/*============ header about ================*/
+
+.header-about {
+	padding: 20px 0 20px;
+}
+
+.header-about__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: percent(190px, $containerWidth);
+}
+
+.header-about__left {
+	min-width: percent(350px, 1080px);
+}
+
+.header-about__right {
+	min-width: percent(345px, 1080px);
+	margin: 0 45px 0 45px;
+}
+
+.header__adress, .phone__link {
+	margin-bottom: 5px;
+}
+
+.header__hours {
+	padding-left: 22px;
+}
+
+.phone__link i,
+.header__adress i,
+.header-mail__name i {
+	margin-right: 5px;
+	color: $green;
+}
+
+/*============ header about end ================*/
+
+/*============ category ================*/
+
+.category {
+	background-color: $green;
+	padding: 17px 0;
+}
+
+.category__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category__row-1 {
+	margin-bottom: 10px;
+}
+
+.category__link {
+	display: inline-block;
+	font-size: 15px;
+	color: #fff;
+	position: relative;
+	margin-right: 25px;
+	padding-right: 25px;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: #73CD73;
+		right: 0;
+		top: 50%;
+	}
+
+	&:last-child::after {
+		display: none;
+	}
+}
+

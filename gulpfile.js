@@ -37,7 +37,7 @@ function htmls() {
 }
 
 function fonts() {
-    return gulp.src(paths.src + 'fonts/**/*.{woff,woff2}')
+    return gulp.src(paths.src + 'fonts/**/*.{woff,woff2,eot,ttf,svg}')
         .pipe(gulp.dest(paths.build + 'fonts/'))
 }
 
@@ -59,7 +59,6 @@ function styles() {
                 replace: true,
                 mediaQuery: true
             })
-
         ]))
         .pipe(gulpIf(!isDevelopment, cleanCSS()))
         .pipe(rename({ suffix: ".min" }))

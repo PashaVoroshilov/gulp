@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'mullerBlack';
+    src: url('../fonts/Muller/fontfabric_-_mullerblack-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerblack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerBold';
+    src: url('../fonts/Muller/fontfabric_-_mullerbold-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerbold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerExtraBold';
+    src: url('../fonts/Muller/fontfabric_-_mullerextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerextrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerHeavy';
+    src: url('../fonts/Muller/fontfabric_-_mullerheavy-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerheavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerLight';
+    src: url('../fonts/Muller/fontfabric_-_mullerlight-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerlight-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerMedium';
+    src: url('../fonts/Muller/fontfabric_-_mullermedium-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullermedium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerRegular';
+    src: url('../fonts/Muller/fontfabric_-_mullerregular-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerregular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mullerThin';
+    src: url('../fonts/Muller/fontfabric_-_mullerthin-webfont.woff2') format('woff2'),
+         url('../fonts/Muller/fontfabric_-_mullerthin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'advicons';
+  src:  url('../fonts/advFonts/advicons.eot?bzkllq');
+  src:  url('../fonts/advFonts/advicons.eot?bzkllq#iefix') format('embedded-opentype'),
+    url('../fonts/advFonts/advicons.ttf?bzkllq') format('truetype'),
+    url('../fonts/advFonts/advicons.woff?bzkllq') format('woff'),
+    url('../fonts/advFonts/advicons.svg?bzkllq#advicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
