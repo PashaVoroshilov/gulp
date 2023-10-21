@@ -1,29 +1,89 @@
-@mixin laptopL {
-	@media screen and (min-width: 1440px) {
-		@content;
+@mixin desktop($value: 'min', $retina: false) {
+	@if $retina {
+		@media
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+			//only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (min-device-pixel-ratio: 2),
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+	} @else {
+		@media screen and (#{$value}-width: 1440px) {
+			@content;
+		}
 	}
 }
 
-@mixin laptopS($value: 'min') {
-	@media screen and (#{$value}-width: 1260px) {
-		@content;
+@mixin laptop($value: 'min', $retina: false) {
+	@if $retina {
+		@media
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+			//only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (min-device-pixel-ratio: 2),
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+	} @else {
+		@media screen and (#{$value}-width: 1200px) {
+			@content;
+		}
 	}
 }
 
-@mixin laptop($value: 'min') {
-	@media screen and (#{$value}-width: 992px) {
-		@content;
+@mixin laptopS($value: 'min', $retina: false) {
+	@if $retina {
+		@media
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+			//only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (min-device-pixel-ratio: 2),
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+	} @else {
+		@media screen and (#{$value}-width: 992px) {
+			@content;
+		}
 	}
 }
 
-@mixin tablet($value: 'min') {
-	@media screen and (#{$value}-width: 768px) {
-		@content;
+@mixin tablet($value: 'min', $retina: false) {
+	@if $retina {
+		@media
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+			//only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (min-device-pixel-ratio: 2),
+			//only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+			@content;
+		}
+	} @else {
+		@media screen and (#{$value}-width: 768px) {
+			@content;
+		}
 	}
 }
 
-@mixin phone($value: 'max') {
-	@media screen and (#{$value}-width: 320px) {
-		@content;
-	}
+@mixin phone($value: 'max', $retina: false) {
+  @if $retina {
+    @media
+      //only screen and (-webkit-min-device-pixel-ratio: 2),
+      //only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+      //only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  } @else {
+    @media screen and (#{$value}-width: 320px) {
+      @content;
+    }
+  }
 }
