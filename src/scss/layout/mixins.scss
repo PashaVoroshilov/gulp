@@ -1,0 +1,25 @@
+@mixin fontFace(
+	$fontFamily,
+	$fontName: $fontFamily,
+	$fontWeight: 400,
+	$fontStyle: normal
+) {
+	@font-face {
+		font-family: $fontFamily;
+		src: url('../fonts/#{$fontName}.ttf') format('truetype'),
+			url('../fonts/#{$fontName}.woff') format('woff'),
+			url('../fonts/#{$fontName}.woff2') format('woff2');
+		font-weight: $fontWeight;
+		font-style: normal;
+		font-display: swap;
+	}
+}
+
+@mixin centeredImg {
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

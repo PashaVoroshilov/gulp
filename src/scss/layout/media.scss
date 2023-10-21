@@ -1,0 +1,29 @@
+@mixin laptopL {
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin laptopS($value: 'min') {
+	@media screen and (#{$value}-width: 1260px) {
+		@content;
+	}
+}
+
+@mixin laptop($value: 'min') {
+	@media screen and (#{$value}-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablet($value: 'min') {
+	@media screen and (#{$value}-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phone($value: 'max') {
+	@media screen and (#{$value}-width: 320px) {
+		@content;
+	}
+}
